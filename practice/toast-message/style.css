@@ -1,0 +1,168 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   flex-direction: column;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #f4f4f5;
+}
+
+body > div {
+   margin: auto;
+}
+
+/* toast */
+
+#toast {
+   position: fixed;
+   top: 32px;
+   right: 32px;
+   z-index: 999999;
+}
+
+.toast {
+   display: flex;
+   align-items: center;
+   background-color: #fff;
+   min-width: 400px;
+   max-width: 450px;
+   border-radius: 2px;
+   border-left: 4px solid;
+   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+   padding: 20px 0;
+   animation: slideInLeft ease 0.3s, fadeOut linear 1s 3s forwards;
+   transition: all linear 0.3s;
+}
+
+@keyframes slideInLeft {
+   from {
+      transform: translateX(calc(100% + 32px));
+      opacity: 0;
+   }
+   to {
+      transform: 0;
+      opacity: 1;
+   }
+}
+
+@keyframes fadeOut {
+   to {
+      opacity: 0;
+   }
+}
+
+.toast + .toast {
+   margin-top: 16px;
+}
+
+.toast--success {
+   border-color: #47d764;
+}
+
+.toast--success .toast__icon {
+   color: #47d764;
+}
+
+.toast--info {
+   border-color: #2f86eb;
+}
+.toast--info .toast__icon {
+   color: #2f86eb;
+}
+
+.toast--warning {
+   border-color: #ffc021;
+}
+.toast--warning .toast__icon {
+   color: #ffc021;
+}
+
+.toast--error {
+   border-color: #ed4337;
+}
+.toast--error .toast__icon {
+   color: #ed4337;
+}
+
+.toast__icon,
+.toast__close {
+   margin: 0 16px;
+}
+
+.toast__icon {
+   font-size: 24px;
+}
+.toast__body {
+}
+.toast__title {
+   font-size: 16px;
+   font-weight: 600;
+   color: #333;
+}
+.toast__msg {
+   font-size: 14px;
+   color: #888;
+   margin-top: 6px;
+   line-height: 1.5;
+}
+.toast__close {
+   font-size: 20px;
+   color: rgba(0, 0, 0, 0.3);
+   cursor: pointer;
+}
+
+.toast__close:hover {
+   opacity: 0.8;
+}
+
+/* button */
+#btn {
+   flex-direction: column;
+   position: fixed;
+   top: 200px;
+   left: 400px;
+}
+
+.btn {
+   display: inline-block;
+   background-color: transparent;
+   padding: 12px 48px;
+   border: none;
+   cursor: pointer;
+   border-radius: 50px;
+   min-width: 120px;
+   color: #fff;
+   transition: opacity 0.2s ease;
+   margin-top: 16px;
+   z-index: 1;
+}
+
+.btn:hover {
+   opacity: 0.8;
+}
+
+.btn:focus {
+   outline: none !important;
+}
+
+.btn + .btn {
+   margin-left: 16px;
+}
+
+.btn--success {
+   background-color: #47d764;
+   flex-grow: 1;
+}
+.btn--info {
+   background-color: #2f86eb;
+   flex-grow: 1;
+}
+.btn--warning {
+   background-color: #ffc021;
+}
+.btn--error {
+   background-color: #ed4337;
+}
