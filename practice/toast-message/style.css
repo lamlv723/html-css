@@ -138,6 +138,8 @@ body > div {
    transition: opacity 0.2s ease;
    margin-top: 16px;
    z-index: 1;
+   font-weight: bold;
+   font-size: 14px;
 }
 
 .btn:hover {
