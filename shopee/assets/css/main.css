@@ -47,7 +47,6 @@
    border-radius: 3px;
    width: 200px;
    line-height: normal;
-
    display: none;
 }
 
@@ -55,6 +54,9 @@
    display: block;
 }
 
+.header__navbar-item--noti:hover .header__navbar-noti {
+   display: block;
+}
 .header__navbar-qr {
    border-radius: 3px;
 }
@@ -114,4 +116,70 @@
 
 .header__navbar-item--no-pointer:hover {
    color: var(--white-color);
+}
+
+.header__navbar-noti {
+   position: absolute;
+   right: 0;
+   width: 400px;
+   background-color: var(--white-color);
+   border-radius: 2px;
+   border: 1px solid #dfdfdf;
+   display: none;
+}
+
+.header__navbar-noti--header p {
+   margin: 0 10px;
+   font-size: 1.4rem;
+   color: #777;
+   line-height: 40px;
+}
+.header__navbar-noti--body {
+   padding: 0;
+}
+
+.header__navbar-noti--info {
+   display: flex;
+   text-decoration: none;
+   padding: 8px 10px;
+}
+.header__navbar-noti-item--img {
+   width: 40px;
+   padding: 0;
+   object-fit: contain;
+   object-position: 0 0;
+}
+
+.header__navbar-noti-item--text {
+   line-height: normal;
+   margin: 0 10px 0 5px;
+}
+
+.noti-item--title {
+   color: #000000cc;
+   display: block;
+   font-size: 1.4rem;
+   margin-bottom: 5px;
+}
+
+.noti-item--decs {
+   font-size: 1.2rem;
+   margin-bottom: 5px;
+   color: #0000008a;
+}
+
+.header__navbar-noti--footer {
+   text-align: center;
+}
+
+.header__navbar-noti--footer a {
+   color: var(--black-color);
+   margin: 0;
+   line-height: 40px;
+   text-decoration: none;
+}
+
+.header__navbar-noti--info:hover,
+.header__navbar-noti--footer:hover {
+   background-color: #f4f4f4;
 }
