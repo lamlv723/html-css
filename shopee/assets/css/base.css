@@ -1,32 +1,42 @@
 :root {
-  --black-color: #000;
-  --white-color: #fff;
-  --text-color: #333;
+   --black-color: #000;
+   --white-color: #fff;
+   --text-color: #333;
 }
 
 * {
-  box-sizing: inherit;
+   box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
-  line-height: 1.6rem;
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
+   font-size: 62.5%;
+   line-height: 1.6rem;
+   font-family: 'Roboto', sans-serif;
+   box-sizing: border-box;
 }
 
 /* lớn hơn 1200px thì kéo về 1200, nhỏ hơn 1200 thì thu lại bằng 100% màn hình */
 .grid {
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
+   width: 1200px;
+   max-width: 100%;
+   margin: 0 auto;
 }
 
 .grid__full--width {
-  width: 100%;
+   width: 100%;
 }
 
 .grid__row {
-  display: flex;
-  flex-wrap: wrap;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+/* animation */
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
 }

@@ -35,7 +35,8 @@
 }
 
 .header__navbar-item:hover,
-.header__navbar-link:hover {
+.header__navbar-link:hover,
+.header__navbar-link:hover .header__navbar-icon {
    color: rgba(225, 225, 225, 0.7);
 }
 
@@ -126,6 +127,7 @@
    border-radius: 2px;
    border: 1px solid #dfdfdf;
    display: none;
+   animation: fadeIn 0.2s ease-in;
 }
 
 .header__navbar-noti--header p {
