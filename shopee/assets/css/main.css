@@ -36,7 +36,48 @@
 
 .header__navbar-item:hover,
 .header__navbar-link:hover {
-   opacity: 0.8;
+   color: rgba(225, 225, 225, 0.7);
+}
+
+.header__navbar-download {
+   position: absolute;
+   left: 0;
+   top: 100%;
+   background-color: var(--white-color);
+   border-radius: 3px;
+   width: 200px;
+   line-height: normal;
+
+   display: none;
+}
+
+.header__navbar-item--qr:hover .header__navbar-download {
+   display: block;
+}
+
+.header__navbar-qr {
+   border-radius: 3px;
+}
+
+.header__navbar-qr-app {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.header__navbar-qr-app--link {
+   margin-bottom: 0;
+   line-height: 24px;
+}
+.header__navbar-qr-app--link img {
+   height: 17px;
+}
+.header__navbar-qr-app--link:nth-child(1),
+.header__navbar-qr-app--link:nth-child(3) {
+   margin-left: 14px;
+}
+.header__navbar-qr-app--link:nth-child(2) {
+   margin-right: 14px;
 }
 
 .header__navbar-icon-link {
@@ -72,5 +113,5 @@
 }
 
 .header__navbar-item--no-pointer:hover {
-   opacity: 1;
+   color: var(--white-color);
 }
