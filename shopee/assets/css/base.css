@@ -15,6 +15,7 @@ html {
   box-sizing: border-box;
 }
 
+/* lớn hơn 1200px thì kéo về 1200, nhỏ hơn 1200 thì thu lại bằng 100% màn hình */
 .grid {
   width: 1200px;
   max-width: 100%;
