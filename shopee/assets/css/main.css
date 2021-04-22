@@ -59,7 +59,9 @@
 
 .header__navbar-item--noti:hover .header__navbar-noti {
    display: block;
+   z-index: 999;
 }
+
 .header__navbar-qr {
    border-radius: 3px;
 }
