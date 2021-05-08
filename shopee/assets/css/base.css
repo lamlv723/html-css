@@ -2,6 +2,7 @@
    --black-color: #000;
    --white-color: #fff;
    --text-color: #333;
+   --primary-color: #fb6445;
    --header__navbar-height: 34px;
    --header-height: 120px;
    --search-with-logo: calc(
@@ -34,6 +35,20 @@ html {
 .grid__row {
    display: flex;
    flex-wrap: wrap;
+   margin-left: -12px;
+   margin-right: -12px;
+}
+
+.grid__col-2 {
+   width: 16.6667%;
+   padding-left: 12px;
+   padding-right: 12px;
+}
+
+.grid__col-10 {
+   width: 83.3333%;
+   padding-left: 12px;
+   padding-right: 12px;
 }
 
 /* animation */
