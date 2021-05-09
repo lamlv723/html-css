@@ -60,3 +60,26 @@ html {
       opacity: 1;
    }
 }
+
+/* button */
+.btn {
+   min-width: 124px;
+   height: 34px;
+   text-decoration: none;
+   border: none;
+   border-radius: 2px;
+   font-size: 1.5rem;
+   padding: 0 12px;
+   outline: none;
+   cursor: pointer;
+   color: var(--text-color);
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   line-height: 1.6rem;
+}
+
+.btn-primary {
+   background-color: var(--primary-color);
+   color: var(--white-color);
+}
