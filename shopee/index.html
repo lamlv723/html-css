@@ -321,22 +321,45 @@
                   <div class="grid__col-10">
                      <div class="home-filter">
                         <span class="home-filter__label">Sắp xếp theo:</span>
-                        <button class="btn">Phổ biến</button>
-                        <button class="btn btn-primary">Mới nhất</button>
-                        <button class="btn">Bán chạy</button>
+                        <button class="home-filter__btn btn">Phổ biến</button>
+                        <button class="home-filter__btn btn btn-primary">
+                           Mới nhất
+                        </button>
+                        <button class="home-filter__btn btn">Bán chạy</button>
                         <div class="select-input">
                            <span class="select-input__label">Giá</span>
-                           <i class="fas fa-angle-down"></i>
+                           <i class="select-input__icon fas fa-angle-down"></i>
+                           <ul class="select-input__list">
+                              <li class="select-input__item">
+                                 Giá: Thấp đến Cao
+                              </li>
+                              <li class="select-input__item">
+                                 Giá: Cao đến Thấp
+                              </li>
+                           </ul>
                         </div>
                         <div class="home-filter__page">
                            <span class="home-filter__page-num">
-                              <span class="home-filter__page-current">1</span>
-                              /14
+                              <span class="home-filter__page-current">1</span
+                              >/<span class="home-filter__page-total">6</span>
                            </span>
-                        </div>
-                        <div class="home-filter__page-control">
-                           <i class="fas fa-angle-left"></i>
-                           <i class="fas fa-angle-right"></i>
+
+                           <div class="home-filter__page-control">
+                              <div
+                                 class="home-filter__page-btn home-filter__page-btn--left home-filter__page-btn--disabled"
+                              >
+                                 <i
+                                    class="home-filter__page-icon fas fa-angle-left"
+                                 ></i>
+                              </div>
+                              <div
+                                 class="home-filter__page-btn home-filter__page-btn--right"
+                              >
+                                 <i
+                                    class="home-filter__page-icon fas fa-angle-right"
+                                 ></i>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
