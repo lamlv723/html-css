@@ -3,8 +3,9 @@
 const btnLikes = document.querySelectorAll('.home-product-item__like');
 console.log(btnLikes);
 btnLikes.forEach(btn =>
-   btn.addEventListener('click', function () {
+   btn.addEventListener('click', function (e) {
       this.classList.toggle('home-product-item__liked');
+      e.preventDefault();
    })
 );
 
