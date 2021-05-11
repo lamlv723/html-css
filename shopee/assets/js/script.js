@@ -1,7 +1,7 @@
 'use strict';
 
 const btnLikes = document.querySelectorAll('.home-product-item__like');
-console.log(btnLikes);
+console.log(`Welcome to Fake Shopee `);
 btnLikes.forEach(btn =>
    btn.addEventListener('click', function (e) {
       this.classList.toggle('home-product-item__liked');

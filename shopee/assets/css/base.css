@@ -183,7 +183,7 @@ html {
 }
 
 .pagination-item__num--active {
-   background-color: var(--primary-color);
+   background-color: #ee4d2d;
    color: var(--white-color);
 }
 

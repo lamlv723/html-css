@@ -724,3 +724,177 @@
    font-size: 1.2rem;
    color: var(--white-color);
 }
+
+/* footer */
+.footer--boder-top {
+   border-top: 1px solid #e9e9e9;
+}
+
+.footer__info {
+   background-color: #fbfbfb;
+   padding-bottom: 17px;
+}
+
+.footer__empty {
+   height: 124px;
+   border-top: 4px solid #ee4d2d;
+   background-color: #fff;
+}
+
+.footer__desc {
+   font-size: 1.2rem;
+   color: rgba(0, 0, 0, 0.54);
+   margin: 40px 0 20px;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+.footer__list {
+   list-style: none;
+   padding: 0;
+}
+.footer__item {
+   font-size: 1.2rem;
+   margin-bottom: 12px;
+   display: flex; /* để giảm chiều ngang thẻ li */
+}
+
+.footer__item-social-icon {
+   font-size: 1.6rem;
+   border-radius: 10px;
+   margin-right: 12px;
+   color: #4a4a4a;
+}
+
+.footer__link {
+   color: rgba(0, 0, 0, 0.54);
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+.footer__link:hover {
+   color: var(--primary-color);
+}
+
+.footer__download {
+   display: flex;
+}
+
+.footer__download-app {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.footer__download-qr {
+   width: 86px;
+   border: 1px solid #ececec;
+   margin-right: 16px;
+}
+
+.footer__download-app-img {
+   width: 80px;
+}
+
+.footer__list--horizontal {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   max-width: 190px;
+}
+
+.footer__desc--same-row {
+   margin-top: 0;
+}
+
+.footer__item-background {
+   background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/49b5753902db445292818641f17183b0.png);
+   margin-right: 8px;
+}
+
+.footer__item-background--visa {
+   background-size: 1390.909090909091% 1194.4444444444443%;
+   background-position: 73.52112676056338% 5.0761421319796955%;
+}
+
+.footer__item-background--mastercard {
+   background-size: 1390.909090909091% 741.3793103448276%;
+   background-position: 44.50704225352113% 5.376344086021505%;
+}
+
+.footer__item-background--jcb {
+   background-size: 1390.909090909091% 934.7826086956521%;
+   background-position: 37.183098591549296% 30.729166666666668%;
+}
+
+.footer__item-background--amex {
+   background-size: 1530% 977.2727272727273%;
+   background-position: 11.188811188811188% 5.181347150259067%;
+}
+
+.footer__item-background--cod {
+   background-size: 1530% 741.3793103448276%;
+   background-position: 79.3006993006993% 25.806451612903224%;
+}
+
+.footer__item-background--installment {
+   background-size: 1390.909090909091% 741.3793103448276%;
+   background-position: 79.85915492957747% 52.1505376344086%;
+}
+
+.footer__item-background--air-pay {
+   background-size: 1912.5% 413.46153846153845%;
+   background-position: 1.3793103448275863% 6.134969325153374%;
+   margin: 0 8px 0 16px;
+}
+
+.footer__item-background--shopee-express {
+   background-size: 689.1891891891892% 1194.4444444444443%;
+   background-position: 59.78593272171254% 5.0761421319796955%;
+}
+
+.footer__item-background--ghtk {
+   background-size: 1390.909090909091% 1194.4444444444443%;
+   background-position: 19.295774647887324% 51.776649746192895%;
+}
+
+.footer__item-background--ghn {
+   background-size: 1390.909090909091% 741.3793103448276%;
+   background-position: 8.732394366197184% 54.83870967741935%;
+}
+
+.footer__item-background--viettel-post {
+   background-size: 597.65625% 167.96875%;
+   background-position: 65.77708006279435% 100%;
+}
+
+.footer__item-background--vnpost {
+   background-size: 1390.909090909091% 796.2962962962963%;
+   background-position: 100% 5.319148936170213%;
+}
+
+.footer__item-background--jnt {
+   background-size: 1390.909090909091% 1343.75%;
+   background-position: 84.08450704225352% 5.025125628140704%;
+}
+
+.footer__item-background--grab_express {
+   background-size: 570.8955223880597% 741.3793103448276%;
+   background-position: 25.673534072900157% 5.376344086021505%;
+}
+
+.footer__item-background--now {
+   background-size: 956.25% 268.75%;
+   background-position: 46.13138686131387% 77.77777777777777%;
+   margin: 0 8px;
+}
+
+.footer__item-background--ninja-van {
+   background-size: 1275% 826.9230769230769%;
+   background-position: 48.08510638297872% 31.21693121693122%;
+   margin-left: 10px;
+}
+
+.footer__item-background--best-express {
+   background-size: 1062.5% 716.6666666666666%;
+   background-position: 10.1010101010101% 28.10810810810811%;
+}
