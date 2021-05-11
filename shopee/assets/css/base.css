@@ -143,3 +143,50 @@ html {
 .select-input:hover .select-input__list {
    display: block;
 }
+
+/* pagination */
+.home-product__pagination {
+   margin-top: 48px;
+   margin-bottom: 32px;
+}
+
+.pagination {
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0;
+}
+.pagination-item {
+   cursor: pointer;
+   color: #939393;
+   margin: 0 14px;
+   border-radius: 2px;
+   overflow: hidden;
+}
+
+.pagination-item__num {
+   font-size: 2rem;
+   min-width: 40px;
+   height: 32px;
+   line-height: 32px;
+   display: block;
+   text-align: center;
+   font-weight: 300;
+}
+.pagination-item__icon {
+   font-size: 1.6rem;
+   line-height: 32px;
+   text-align: center;
+   width: 40px;
+   height: 32px;
+}
+
+.pagination-item__num--active {
+   background-color: var(--primary-color);
+   color: var(--white-color);
+}
+
+.pagination-item__num--active:hover {
+   background-color: #f7836c;
+}

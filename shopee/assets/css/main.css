@@ -581,7 +581,7 @@
 .home-product-item__img {
    padding-top: 100%;
    background-size: contain;
-   background-position: center;
+   background-position: top center;
 }
 .home-product-item__name {
    font-size: 1.3rem;
