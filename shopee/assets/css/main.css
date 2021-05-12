@@ -732,7 +732,6 @@
 
 .footer__info {
    background-color: #fbfbfb;
-   padding-bottom: 17px;
 }
 
 .footer__empty {
@@ -751,6 +750,7 @@
 .footer__list {
    list-style: none;
    padding: 0;
+   margin-bottom: 20px;
 }
 .footer__item {
    font-size: 1.2rem;
@@ -802,8 +802,42 @@
    max-width: 190px;
 }
 
-.footer__desc--same-row {
+.footer__desc--same-column {
    margin-top: 0;
+}
+
+.footer__info-more {
+   display: flex;
+   flex: 1;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 1.4rem;
+   height: 100px;
+   color: rgba(0, 0, 0, 0.54);
+}
+
+.footer__info-country {
+   display: flex;
+   align-items: center;
+}
+.footer__info-country-list {
+   display: flex;
+   padding-left: 0;
+   list-style: none;
+}
+
+.footer__info-country-item {
+   padding: 0 6px;
+   border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer__info-country-item:last-child {
+   border-right: none;
+}
+
+.footer__info-country-item-link {
+   text-decoration: none;
+   color: rgba(0, 0, 0, 0.54);
 }
 
 .footer__item-background {
