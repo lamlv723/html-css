@@ -9,11 +9,23 @@ btnLikes.forEach(btn =>
    })
 );
 
-/*
-if (this.classList.contains('.control__device-btn--fan')) {
-   onclickQuat();
-} 
-if (this.classList.contains('.control__device-btn--light')) {
-   onclickDen();
-} 
-*/
+const changeActive = function (list, className) {
+   list.forEach(item =>
+      item.addEventListener('click', function (e) {
+         if (this.classList.contains(className)) {
+            e.preventDefault();
+         } else {
+            const activeItem = document.getElementsByClassName(className);
+            const activeItemArr = Array.prototype.slice.call(activeItem);
+            activeItemArr[0].classList.remove(className);
+            this.classList.add(className);
+         }
+      })
+   );
+};
+
+const sortItems = document.querySelectorAll('.header__sort-item');
+changeActive(sortItems, 'header__sort-item--active');
+
+const categoryItems = document.querySelectorAll('.category-item');
+changeActive(categoryItems, 'category-item--active');

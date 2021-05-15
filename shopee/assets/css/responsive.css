@@ -1,0 +1,148 @@
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+   :root {
+      --header__navbar-height: 0px;
+      --header-height: 68px;
+      --search-with-logo: calc(
+         var(--header-height) - var(--header__navbar-height)
+      );
+   }
+   .hide-on-mobile-tablet {
+      display: none;
+   }
+
+   .header {
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      right: 0;
+      left: 0;
+   }
+
+   .header__cart-noti {
+      position: fixed;
+      top: var(--header-height);
+      right: 0;
+      width: 100%;
+      text-align: center;
+   }
+
+   .header__cart-noti::before {
+      display: none;
+   }
+
+   .app__container {
+      margin-top: calc(var(--header-height) + var(--header__sort-bar-height));
+   }
+
+   .app__container-content {
+      margin: 0 4px;
+      padding-top: 12px;
+   }
+
+   .header__sort-bar {
+      display: flex;
+   }
+
+   .mobile-category {
+      display: block;
+   }
+
+   .footer__info-license {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+   }
+
+   .footer__info-more {
+      height: 58px;
+   }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+   .hide-on-tablet {
+      display: none;
+   }
+
+   .header__cart {
+      width: 120px;
+      text-align: right;
+   }
+
+   .header__cart-quantity {
+      right: -12px;
+   }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+   .hide-on-mobile {
+      display: none;
+   }
+
+   * {
+      -webkit-tap-highlight-color: transparent;
+   }
+
+   .header__search {
+      position: fixed;
+      top: var(--header-height);
+      left: 0;
+      right: 0;
+      height: var(--header__sort-bar-height);
+      z-index: 1;
+      display: none;
+   }
+
+   .header__mobile {
+      display: block;
+   }
+
+   .header__mobile-search-checkbox:checked ~ .header__search {
+      display: flex;
+   }
+
+   .header__search-history {
+      top: calc(100% + 9px);
+      right: 0;
+   }
+   .header__search-with-logo {
+      justify-content: space-between;
+      margin: 0 8px;
+   }
+
+   .header__logo,
+   .header__cart {
+      width: unset;
+   }
+
+   .header__logo--img {
+      margin: 0;
+   }
+
+   .header__cart {
+      padding: 0 12px;
+   }
+
+   .pagination-item {
+      margin: 0 4px;
+   }
+   .pagination-item__num {
+      font-size: 1.6rem;
+      min-width: 36px;
+   }
+
+   .footer--mobile {
+      padding: 0 16px;
+   }
+
+   .footer__desc {
+      margin: 20px 0;
+   }
+
+   .footer__download {
+      margin-bottom: 20px;
+      margin-left: auto;
+   }
+}
