@@ -2,6 +2,7 @@ HTML and CSS practice repository
 ================================
 
 🔥 As the name suggests, this repo contains mostly about HTML and CSS. A little JS was added to interact with.
+
 💥 Multi-device was supported
 
 Shopee Clone
