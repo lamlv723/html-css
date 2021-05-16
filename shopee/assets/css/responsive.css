@@ -7,6 +7,11 @@
          var(--header-height) - var(--header__navbar-height)
       );
    }
+
+   * {
+      -webkit-tap-highlight-color: transparent;
+   }
+
    .hide-on-mobile-tablet {
       display: none;
    }
@@ -79,10 +84,6 @@
 @media (max-width: 739px) {
    .hide-on-mobile {
       display: none;
-   }
-
-   * {
-      -webkit-tap-highlight-color: transparent;
    }
 
    .header__search {
