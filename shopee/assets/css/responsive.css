@@ -78,6 +78,10 @@
    .header__cart-quantity {
       right: -12px;
    }
+
+   .header__category-tablet-icon {
+      display: block;
+   }
 }
 
 /* mobile */
@@ -97,6 +101,11 @@
    }
 
    .header__mobile {
+      display: flex;
+      align-items: center;
+   }
+
+   .header__category-mobile-icon {
       display: block;
    }
 

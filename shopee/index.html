@@ -222,13 +222,57 @@
                </div>
 
                <div class="header__search-with-logo">
+                  <label
+                     for="header__category-tablet-mobile-checkbox"
+                     class="hide-on-mobile"
+                  >
+                     <i class="fas fa-bars header__category-tablet-icon"></i>
+                  </label>
+                  <input
+                     type="checkbox"
+                     hidden
+                     id="header__category-tablet-mobile-checkbox"
+                  />
+                  <label
+                     for="header__category-tablet-mobile-checkbox"
+                     class="header__category-tablet-mobile-blur"
+                  ></label>
+                  <div class="header__category-tablet-mobile">
+                     <label
+                        for="header__category-tablet-mobile-checkbox"
+                        class="header__category-tablet-mobile-close"
+                     >
+                        <i
+                           class="
+                              header__category-tablet-mobile-close-icon
+                              fas
+                              fa-times
+                           "
+                        ></i>
+                     </label>
+
+                     <ul class="header__category-tablet-mobile-list">
+                        <li class="header__category-tablet-mobile-item">
+                           Đăng nhập
+                        </li>
+                        <li class="header__category-tablet-mobile-item">
+                           Đăng ký
+                        </li>
+                     </ul>
+                  </div>
+
                   <input
                      type="checkbox"
                      hidden
                      id="mobile-search-checkbox"
                      class="header__mobile-search-checkbox"
                   />
+
                   <div class="header__mobile">
+                     <label for="header__category-tablet-mobile-checkbox">
+                        <i class="fas fa-bars header__category-mobile-icon"></i>
+                     </label>
+
                      <label
                         for="mobile-search-checkbox"
                         class="header__mobile-search"
