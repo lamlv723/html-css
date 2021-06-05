@@ -343,6 +343,7 @@
    list-style: none;
    padding: 0;
    margin: 0;
+   border-top: 1px solid rgb(226, 226, 226);
 }
 
 .header__category-tablet-mobile-item {
@@ -350,7 +351,10 @@
    font-weight: 400;
    line-height: 4rem;
    padding-left: 20px;
-   border-top: 1px solid rgb(226, 226, 226);
+}
+
+.header__category-tablet-mobile-item:hover {
+   color: var(--primary-color);
 }
 
 #header__category-tablet-mobile-checkbox:checked
