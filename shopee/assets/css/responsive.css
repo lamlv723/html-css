@@ -102,6 +102,9 @@
 
    .header__mobile {
       display: flex;
+      display: -webkit-flex;
+      display: flex;
+      display: flex;
       align-items: center;
    }
 
