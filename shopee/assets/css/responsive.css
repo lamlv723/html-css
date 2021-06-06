@@ -103,7 +103,7 @@
    .header__mobile {
       display: flex;
       display: -webkit-flex;
-      display: -moz-box;
+      display: -webkit-box;
       align-items: center;
    }
 
