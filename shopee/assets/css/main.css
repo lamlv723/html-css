@@ -53,6 +53,10 @@
    color: var(--primary-color);
 }
 
+.header__sort-item--active {
+   border-bottom: 3px solid var(--primary-color);
+}
+
 /* header */
 .header {
    height: var(--header-height);
