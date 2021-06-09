@@ -368,6 +368,10 @@
    display: none;
 }
 
+.header__category-mobile-icon {
+   float: left;
+}
+
 .header__mobile-search {
    padding: 0 12px;
 }
