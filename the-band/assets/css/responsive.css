@@ -19,16 +19,16 @@
    .footer i[class*='ti'] {
       font-size: 24px;
       padding: 0 4px;
-}
-
-.footer .copyright {
-   font-size: 18px;
-   margin-top: 28px;
-   display: inline-block;
+   }
+   .footer .copyright {
+      font-size: 18px;
+      margin-top: 28px;
+      display: inline-block;
+   }
 }
 
 /* Mobile  */
-@media (max-width: 739giảipx) {
+@media (max-width: 739px) {
    /* COMMON */
    .s-col-12 {
       width: 100% !important;
